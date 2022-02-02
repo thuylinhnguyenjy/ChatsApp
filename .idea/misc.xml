@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/drawable/circle_bg.xml" value="0.2484375" />
+        <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/drawable/circle_green.xml" value="0.2484375" />
+        <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/drawable/edittext_custom.xml" value="0.2484375" />
+        <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/drawable/ic_attachment.xml" value="0.2484375" />
+        <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/drawable/ic_call.xml" value="0.2484375" />
+        <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/drawable/ic_camera.xml" value="0.1296875" />
+        <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/drawable/ic_search.xml" value="0.24427083333333333" />
+        <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/drawable/ic_status.xml" value="0.2484375" />
+        <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/drawable/ic_video.xml" value="0.2484375" />
+        <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/drawable/mess_send.xml" value="0.2675925925925926" />
+        <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/drawable/sent_drawable.xml" value="0.24427083333333333" />
+        <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/layout/activity_chat.xml" value="0.264" />
+        <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/layout/activity_otpcheck.xml" value="0.4" />
+        <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/layout/activity_phone_number.xml" value="0.4" />
+        <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/layout/activity_setup_profile.xml" value="0.23229166666666667" />
+        <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/layout/content_main.xml" value="0.11354166666666667" />
+        <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/layout/content_phone_number.xml" value="0.23229166666666667" />
+        <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/layout/fragment_first.xml" value="0.11354166666666667" />
+        <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/layout/fragment_first2.xml" value="0.11354166666666667" />
+        <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/layout/mess_receive.xml" value="0.4" />
+        <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/layout/mess_send.xml" value="0.4" />
+        <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/layout/row_conversation.xml" value="0.264" />
+        <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/menu/bottom_nav.xml" value="0.228125" />
+        <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/menu/menu_main.xml" value="0.228125" />
+        <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/menu/top_nav.xml" value="0.264" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
