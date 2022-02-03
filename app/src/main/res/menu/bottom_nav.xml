@@ -2,7 +2,7 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="Chat" android:icon="@drawable/ic_chats"/>
-    <item android:title="Status" android:icon="@drawable/ic_status" />
-    <item android:title="Calls" android:icon="@drawable/ic_call"/>
+    <item android:title="Chat" android:id="@+id/chat" android:icon="@drawable/ic_chats"/>
+    <item android:title="Story" android:id="@+id/story" android:icon="@drawable/ic_status" />
+    <item android:title="Calls" android:id="@+id/call" android:icon="@drawable/ic_call"/>
 </menu>

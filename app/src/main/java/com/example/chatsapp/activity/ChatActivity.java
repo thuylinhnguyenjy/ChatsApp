@@ -22,6 +22,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 
 public class ChatActivity extends AppCompatActivity {
 
@@ -31,6 +32,7 @@ public class ChatActivity extends AppCompatActivity {
     String senderRoom, receiverRoom;
     FirebaseDatabase database;
 
+    @SuppressLint("RestrictedApi")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,12 +47,10 @@ public class ChatActivity extends AppCompatActivity {
         String receiverId = getIntent().getStringExtra("uid");
         String senderId = FirebaseAuth.getInstance().getUid();
 
-        messagesAdapter = new MessagesAdapter(this, messList);
-//        binding.rvMessage.setLayoutManager(new LinearLayoutManager(this));
-//        binding.rvMessage.setAdapter(messagesAdapter);
-
         senderRoom = senderId + receiverId;
         receiverRoom = receiverId + senderId;
+
+        messagesAdapter = new MessagesAdapter(this, messList, senderRoom, receiverRoom);
 
         binding.btnSend.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,7 +69,6 @@ public class ChatActivity extends AppCompatActivity {
                         .setValue(mess).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void unused) {
-                        Toast.makeText(ChatActivity.this, "Hehehehe", Toast.LENGTH_SHORT).show();
 
                         database.getReference()
                                 .child("Chat")
@@ -82,6 +81,12 @@ public class ChatActivity extends AppCompatActivity {
 
                             }
                         });
+
+                        HashMap<String, Object> lastMessObject = new HashMap<>();
+                        lastMessObject.put("lastMess", mess.getMessage());
+                        lastMessObject.put("lastMessTime", mess.getTimestamp());
+                        database.getReference().child("Chat").child(senderRoom).updateChildren(lastMessObject);
+                        database.getReference().child("Chat").child(receiverRoom).updateChildren(lastMessObject);
                     }
                 });
             }
@@ -90,30 +95,30 @@ public class ChatActivity extends AppCompatActivity {
         getSupportActionBar().setTitle(contactName);
         getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
 
-//        database.getReference()
-//                .child("Chat")
-//                .child(senderRoom)
-//                .child("messages")
-//                .addValueEventListener(new ValueEventListener() {
-//                    @SuppressLint("NotifyDataSetChanged")
-//                    @Override
-//                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-//                        messList.clear();
-//                        for (DataSnapshot ss : snapshot.getChildren()){
-////                            Message mess = ss.getValue(Message.class);
-////                            mess.setMessageId(ss.getKey());
-////                            messList.add(mess);
-//                            Toast.makeText(ChatActivity.this, ss.getValue(Message.class).getMessage(), Toast.LENGTH_SHORT).show();
-//                        }
-//                        //messagesAdapter.notifyDataSetChanged();
-//                    }
-//
-//                    @Override
-//                    public void onCancelled(@NonNull DatabaseError error) {
-//
-//                    }
-//                });
+        database.getReference()
+                .child("Chat")
+                .child(senderRoom)
+                .child("messages")
+                .addValueEventListener(new ValueEventListener() {
+                    @SuppressLint("NotifyDataSetChanged")
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        messList.clear();
+                        for (DataSnapshot ss : snapshot.getChildren()){
+                            Message mess = ss.getValue(Message.class);
+                            mess.setMessageId(ss.getKey());
+                            messList.add(mess);
+                        }
+                            messagesAdapter.notifyDataSetChanged();
+                    }
 
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+        binding.rvMessage.setLayoutManager(new LinearLayoutManager(this));
+        binding.rvMessage.setAdapter(messagesAdapter);
     }
 
     @Override

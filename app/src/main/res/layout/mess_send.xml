@@ -1,44 +1,46 @@
-<androidx.constraintlayout.widget.ConstraintLayout
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-app:layout_constraintTop_toTopOf="parent"
-app:layout_constraintRight_toRightOf="parent"
-tools:ignore="MissingConstraints"
-xmlns:android="http://schemas.android.com/apk/res/android">
-
-<androidx.cardview.widget.CardView
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:backgroundTint="@color/teal_700"
-    android:elevation="10dp"
-    android:padding="5dp">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginVertical="3dp"
+    tools:ignore="MissingConstraints"
+    android:layout_gravity="right"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <LinearLayout
+    <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        app:layout_constraintRight_toRightOf="parent"
+        android:backgroundTint="@color/teal_700"
+        android:elevation="10dp"
         android:padding="5dp"
-        android:orientation="horizontal">
+        app:layout_constraintStart_toStartOf="parent">
 
-        <ImageView
-            android:layout_gravity="center"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/ic_fb_love">
-        </ImageView>
-
-        <TextView
-            android:id="@+id/messSent"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:text="Message">
-        </TextView>
+            android:orientation="horizontal"
+            android:padding="5dp">
 
-    </LinearLayout>
+            <ImageView
+                android:id="@+id/emotion"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_fb_love"></ImageView>
 
-</androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/messSent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Message"
+                android:textSize="20dp"></TextView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

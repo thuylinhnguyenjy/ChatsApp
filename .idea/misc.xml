@@ -15,7 +15,7 @@
         <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/drawable/mess_send.xml" value="0.2675925925925926" />
         <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/drawable/sent_drawable.xml" value="0.24427083333333333" />
         <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/layout/activity_chat.xml" value="0.264" />
-        <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/layout/activity_main.xml" value="0.4" />
         <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/layout/activity_otpcheck.xml" value="0.4" />
         <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/layout/activity_phone_number.xml" value="0.4" />
         <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/layout/activity_setup_profile.xml" value="0.23229166666666667" />
@@ -23,12 +23,14 @@
         <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/layout/content_phone_number.xml" value="0.23229166666666667" />
         <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/layout/fragment_first.xml" value="0.11354166666666667" />
         <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/layout/fragment_first2.xml" value="0.11354166666666667" />
+        <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/layout/item_story.xml" value="0.536" />
         <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/layout/mess_receive.xml" value="0.4" />
         <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/layout/mess_send.xml" value="0.4" />
         <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/layout/row_conversation.xml" value="0.264" />
         <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/menu/bottom_nav.xml" value="0.228125" />
         <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/menu/menu_main.xml" value="0.228125" />
         <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/menu/top_nav.xml" value="0.264" />
+        <entry key="..\:/STUDY/Code/ChatsApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.146875" />
       </map>
     </option>
   </component>
